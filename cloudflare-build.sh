@@ -13,6 +13,6 @@ bundle install
 
 # 构建 Jekyll 站点
 echo "🔨 构建 Jekyll 站点..."
-bundle exec jekyll build
+JEKYLL_ENV=production bundle exec jekyll build
 
 echo "✅ 构建完成！"

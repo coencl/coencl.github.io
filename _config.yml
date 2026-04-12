@@ -97,7 +97,7 @@ theme_mode: # [light | dark]
 cdn: # e.g. 'https://cdn.example.com'
 
 # the avatar on sidebar, support local or CORS resources
-avatar: https://github.com/BoredFish1.png
+avatar: https://github.com/coencl.png
 
 # favicon settings
 favicon: /assets/img/favicons/favicon.ico

@@ -2,7 +2,7 @@
 
 ## 📋 背景
 
-GitHub 用户名已从 `fishcoen` 更新为 `BoredFish1`，需要在 Cloudflare Pages 中重新连接 GitHub 仓库。
+GitHub 用户名已更新为 `coencl`，需要在 Cloudflare Pages 中重新连接 GitHub 仓库。
 
 ## 🔧 操作步骤
 
@@ -14,7 +14,7 @@ GitHub 用户名已从 `fishcoen` 更新为 `BoredFish1`，需要在 Cloudflare 
 ### 2. 进入 Pages 项目设置
 
 1. 点击左侧菜单的 **Pages**
-2. 找到你的项目：`fishcoen-github-io`（或你的实际项目名称）
+2. 找到你的项目：`coencl-github-io`（或你的实际项目名称）
 3. 点击项目名称进入项目详情页
 
 ### 3. 重新连接 GitHub 仓库
@@ -25,7 +25,7 @@ GitHub 用户名已从 `fishcoen` 更新为 `BoredFish1`，需要在 Cloudflare 
 4. 如果已经连接，点击 **Disconnect** 断开旧连接
 5. 重新点击 **Connect to Git**
 6. 授权 Cloudflare 访问你的 GitHub 账户（如果还没授权）
-7. 选择新的仓库：`BoredFish1/fishcoen.github.io`
+7. 选择新的仓库：`coencl/coencl.github.io`
 8. 点击 **Begin setup** 或 **Save**
 
 ### 4. 验证配置
@@ -44,7 +44,7 @@ GitHub 用户名已从 `fishcoen` 更新为 `BoredFish1`，需要在 Cloudflare 
 ## ✅ 验证部署
 
 1. 检查构建日志，确保构建成功
-2. 访问你的网站：`https://zeroisall.fun` 或 `https://fishcoen-github-io.pages.dev`
+2. 访问你的网站：`https://zeroisall.fun` 或 `https://coencl-github-io.pages.dev`
 3. 确认网站正常显示
 
 ## 🔍 GitHub Actions 配置说明
@@ -53,7 +53,7 @@ GitHub 用户名已从 `fishcoen` 更新为 `BoredFish1`，需要在 Cloudflare 
 
 **当前配置：**
 ```yaml
-projectName: fishcoen-github-io
+projectName: coencl-github-io
 ```
 
 **如果 Cloudflare 项目名称保持不变：**
@@ -70,7 +70,7 @@ projectName: fishcoen-github-io
 ### Q: 重新连接后构建失败怎么办？
 
 **A:** 检查以下几点：
-1. 确认 GitHub 仓库地址正确：`BoredFish1/fishcoen.github.io`
+1. 确认 GitHub 仓库地址正确：`coencl/coencl.github.io`
 2. 确认 Cloudflare 有权限访问该仓库
 3. 检查构建日志中的错误信息
 4. 确认 `Gemfile` 和 `_config.yml` 配置正确

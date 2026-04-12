@@ -1,7 +1,7 @@
 # 一条无聊的鱼
 
 [![网站状态](https://img.shields.io/website?url=https://zeroisall.fun)][website]
-[![GitHub license](https://img.shields.io/github/license/BoredFish1/fishcoen.github.io.svg?color=blue)][mit]
+[![GitHub license](https://img.shields.io/github/license/coencl/coencl.github.io.svg?color=blue)][mit]
 
 ## 🎯 博客内容
 
@@ -16,7 +16,7 @@
 ## 📱 访问方式
 
 - **网站地址**: [https://zeroisall.fun](https://zeroisall.fun)
-- **GitHub 仓库**: [BoredFish1/fishcoen.github.io](https://github.com/BoredFish1/fishcoen.github.io)
+- **GitHub 仓库**: [coencl/coencl.github.io](https://github.com/coencl/coencl.github.io)
 
 ## 📄 许可证
 
@@ -24,6 +24,6 @@
 
 [website]: https://zeroisall.fun
 [chirpy]: https://github.com/cotes2020/jekyll-theme-chirpy/
-[mit]: https://github.com/BoredFish1/fishcoen.github.io/blob/main/LICENSE
+[mit]: https://github.com/coencl/coencl.github.io/blob/main/LICENSE
 
 <!-- Auto-deployment test -->

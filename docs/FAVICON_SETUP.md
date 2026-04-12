@@ -112,7 +112,7 @@ favicon: /assets/img/favicon.ico
 
 ```yaml
 # 在 _config.yml 中设置
-favicon: https://github.com/fishcoen.png
+favicon: https://github.com/coencl.png
 ```
 
 ### 使用在线头像服务

@@ -16,7 +16,7 @@
 ```
 类型: CNAME
 名称: @
-目标: fishcoen-github-io.pages.dev
+目标: coencl-github-io.pages.dev
 代理状态: 已代理 (橙色云朵)
 TTL: Auto
 ```
@@ -25,7 +25,7 @@ TTL: Auto
 ```
 类型: CNAME
 名称: www
-目标: fishcoen-github-io.pages.dev
+目标: coencl-github-io.pages.dev
 代理状态: 已代理 (橙色云朵)
 TTL: Auto
 ```
@@ -45,14 +45,14 @@ TTL: Auto
 **记录 1：根域名**
 - Type: `CNAME`
 - Name: `@`
-- Target: `fishcoen-github-io.pages.dev`
+- Target: `coencl-github-io.pages.dev`
 - Proxy status: **已代理** (橙色云朵)
 - TTL: `Auto`
 
 **记录 2：www 子域名**
 - Type: `CNAME`
 - Name: `www`
-- Target: `fishcoen-github-io.pages.dev`
+- Target: `coencl-github-io.pages.dev`
 - Proxy status: **已代理** (橙色云朵)
 - TTL: `Auto`
 
@@ -61,8 +61,8 @@ TTL: Auto
 
 ```
 类型    名称    内容                          代理状态    TTL
-CNAME   @      fishcoen-github-io.pages.dev   已代理     Auto
-CNAME   www    fishcoen-github-io.pages.dev   已代理     Auto
+CNAME   @      coencl-github-io.pages.dev   已代理     Auto
+CNAME   www    coencl-github-io.pages.dev   已代理     Auto
 TXT     _dnsauth  [验证字符串]                DNS only   Auto
 ```
 

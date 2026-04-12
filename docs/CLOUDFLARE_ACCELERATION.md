@@ -40,13 +40,13 @@
 ```
 类型: CNAME
 名称: @
-目标: fishcoen-github-io.pages.dev
+目标: coencl-github-io.pages.dev
 代理状态: 已代理 (橙色云朵)
 TTL: Auto
 
 类型: CNAME
 名称: www
-目标: fishcoen-github-io.pages.dev
+目标: coencl-github-io.pages.dev
 代理状态: 已代理 (橙色云朵)
 TTL: Auto
 ```

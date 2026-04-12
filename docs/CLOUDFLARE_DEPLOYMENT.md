@@ -97,12 +97,12 @@ _site
    ```
    类型: CNAME
    名称: @
-   目标: fishcoen-github-io.pages.dev
+   目标: coencl-github-io.pages.dev
    TTL: Auto
    
    类型: CNAME  
    名称: www
-   目标: fishcoen-github-io.pages.dev
+   目标: coencl-github-io.pages.dev
    TTL: Auto
    ```
 
@@ -117,13 +117,13 @@ _site
    记录类型: CNAME
    主机记录: @
    解析路线: 默认
-   记录值: fishcoen-github-io.pages.dev
+   记录值: coencl-github-io.pages.dev
    TTL: 600
    
    记录类型: CNAME
    主机记录: www  
    解析路线: 默认
-   记录值: fishcoen-github-io.pages.dev
+   记录值: coencl-github-io.pages.dev
    TTL: 600
    ```
 
@@ -230,6 +230,6 @@ bundle exec jekyll serve
 
 ## 🎉 完成
 
-部署完成后，你的博客将在 `https://fishcoen.pages.dev` 上运行！
+部署完成后，你的博客将在 `https://coencl.pages.dev` 上运行！
 
 如果需要帮助，请查看 [Cloudflare Pages 文档](https://developers.cloudflare.com/pages/)。

@@ -3,8 +3,8 @@
 http://zeroisall.fun/* https://zeroisall.fun/:splat 301!
 
 # 从 pages.dev 域名重定向到自定义域名
-http://fishcoen-github-io.pages.dev/* https://zeroisall.fun/:splat 301!
-https://fishcoen-github-io.pages.dev/* https://zeroisall.fun/:splat 301!
+http://coencl-github-io.pages.dev/* https://zeroisall.fun/:splat 301!
+https://coencl-github-io.pages.dev/* https://zeroisall.fun/:splat 301!
 
 # 404 页面
 /* /404.html 404

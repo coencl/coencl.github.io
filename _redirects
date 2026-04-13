@@ -2,7 +2,7 @@
 # 重定向到 HTTPS
 http://zeroisall.fun/* https://zeroisall.fun/:splat 301!
 
-# 从 pages.dev 域名重定向到自定义域名
+# Pages 子域名重定向到主域名
 http://coencl-github-io.pages.dev/* https://zeroisall.fun/:splat 301!
 https://coencl-github-io.pages.dev/* https://zeroisall.fun/:splat 301!
 

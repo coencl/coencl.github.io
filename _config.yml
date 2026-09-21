@@ -215,6 +215,7 @@ include:
   - _redirects
 
 exclude:
+  - transform3d_demo.html
   - "*.gem"
   - "*.gemspec"
   - docs

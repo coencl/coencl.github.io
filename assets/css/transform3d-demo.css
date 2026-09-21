@@ -1,0 +1,71 @@
+.transform3d-demo {
+  --t3d-panel: #f5f6f8;
+  --t3d-text: #242833;
+  --t3d-sub: #555f70;
+  --t3d-muted: #858d9b;
+  --t3d-border: #d8dde5;
+  --t3d-ok-bg: #e9f3e3;
+  --t3d-ok-text: #35621c;
+  --t3d-no-bg: #fbeaea;
+  --t3d-no-text: #9b3333;
+  --t3d-object: #7560ce;
+  color: var(--t3d-text);
+  margin: 1.5rem 0 2rem;
+  container-type: inline-size;
+}
+html[data-mode="dark"] .transform3d-demo {
+  --t3d-panel: #23262e;
+  --t3d-text: #ebedf2;
+  --t3d-sub: #b7becc;
+  --t3d-muted: #8690a3;
+  --t3d-border: #424857;
+  --t3d-ok-bg: #263e23;
+  --t3d-ok-text: #b9df9f;
+  --t3d-no-bg: #4c292e;
+  --t3d-no-text: #f2b5b5;
+  --t3d-object: #b3a0ff;
+}
+@media (prefers-color-scheme: dark) {
+  html:not([data-mode="light"]) .transform3d-demo {
+    --t3d-panel: #23262e;
+    --t3d-text: #ebedf2;
+    --t3d-sub: #b7becc;
+    --t3d-muted: #8690a3;
+    --t3d-border: #424857;
+    --t3d-ok-bg: #263e23;
+    --t3d-ok-text: #b9df9f;
+    --t3d-no-bg: #4c292e;
+    --t3d-no-text: #f2b5b5;
+    --t3d-object: #b3a0ff;
+  }
+}
+.transform3d-demo *, .transform3d-demo *::before, .transform3d-demo *::after { box-sizing: border-box; }
+.transform3d-demo .t3d-grid { display: grid; grid-template-columns: 1fr; gap: 1rem; }
+.transform3d-demo .t3d-grid > * { min-width: 0; }
+@container (min-width: 620px) {
+  .transform3d-demo .t3d-grid { grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); }
+}
+.transform3d-demo .t3d-scene { display: block; width: 100%; height: auto; background: var(--t3d-panel); border: 1px solid var(--t3d-border); border-radius: 12px; cursor: grab; touch-action: none; }
+.transform3d-demo .t3d-scene:active { cursor: grabbing; }
+.transform3d-demo .t3d-hint { font-size: .8rem; color: var(--t3d-sub); margin: .5rem 0; line-height: 1.6; }
+.transform3d-demo .t3d-buttons { display: flex; flex-wrap: wrap; gap: .5rem; }
+.transform3d-demo button { font: inherit; font-size: .8rem; line-height: 1.4; min-height: 36px; padding: .45rem .65rem; color: var(--t3d-text); background: var(--t3d-panel); border: 1px solid var(--t3d-border); border-radius: 8px; cursor: pointer; }
+.transform3d-demo button:hover { border-color: var(--t3d-object); }
+.transform3d-demo :focus-visible { outline: 2px solid var(--t3d-object); outline-offset: 3px; }
+.transform3d-demo fieldset { padding: 0; margin: 0 0 .75rem; border: 0; min-width: 0; }
+.transform3d-demo legend { float: none; width: auto; font-size: .8rem; font-weight: 600; color: var(--t3d-sub); margin-bottom: .3rem; }
+.transform3d-demo .t3d-row { display: grid; grid-template-columns: 4.5rem minmax(0, 1fr) 3.5rem; align-items: center; gap: .5rem; min-height: 34px; font-size: .8rem; }
+.transform3d-demo label { margin: 0; color: var(--t3d-sub); }
+.transform3d-demo input[type="range"] { width: 100%; min-width: 0; margin: 0; accent-color: var(--t3d-object); cursor: pointer; }
+.transform3d-demo output { text-align: right; font-family: ui-monospace, Consolas, monospace; }
+.transform3d-demo .t3d-results { margin-top: 1rem; }
+.transform3d-demo .t3d-card { background: var(--t3d-panel); border: 1px solid var(--t3d-border); border-radius: 10px; padding: .8rem; }
+.transform3d-demo .t3d-caption { font-size: .8rem; color: var(--t3d-sub); margin-bottom: .4rem; }
+.transform3d-demo .t3d-matrix { width: 100%; margin: 0; border: 0; border-collapse: collapse; table-layout: fixed; }
+.transform3d-demo .t3d-matrix tr { background: transparent !important; border: 0; }
+.transform3d-demo .t3d-matrix td { padding: .2rem; border: 0; background: transparent; text-align: right; font: .8rem/1.6 ui-monospace, Consolas, monospace; }
+.transform3d-demo .t3d-kind { font-size: 1.2rem; font-weight: 600; margin: .25rem 0 .5rem; }
+.transform3d-demo .t3d-pill { display: inline-block; font-size: .75rem; padding: .2rem .5rem; border-radius: 6px; margin: .15rem .3rem .15rem 0; }
+.transform3d-demo .t3d-pill[data-kept="true"] { background: var(--t3d-ok-bg); color: var(--t3d-ok-text); }
+.transform3d-demo .t3d-pill[data-kept="false"] { background: var(--t3d-no-bg); color: var(--t3d-no-text); }
+.transform3d-demo .t3d-loading { color: var(--t3d-sub); font-size: .85rem; }

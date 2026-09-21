@@ -1,0 +1,53 @@
+<link rel="stylesheet" href="{{ '/assets/css/transform3d-demo.css' | relative_url }}">
+<section class="transform3d-demo" id="transform3d-demo" aria-label="三维变换交互演示" markdown="0">
+  <p class="t3d-loading" id="t3d-loading" role="status">正在加载交互演示…</p>
+  <noscript><p>请启用 JavaScript 以操作交互演示。下方正文仍可正常阅读。</p></noscript>
+  <div class="t3d-grid">
+    <div>
+      <svg class="t3d-scene" id="t3d-cv" viewBox="0 0 400 400" tabindex="0" role="img" aria-labelledby="t3d-title t3d-description" aria-describedby="t3d-help">
+        <title id="t3d-title">原始立方体与变换后的立方体</title>
+        <desc id="t3d-description">灰色虚线为原始位置，紫色实线为变换后的形状，红绿蓝线为局部坐标轴。</desc>
+        <g id="t3d-g"></g>
+      </svg>
+      <p class="t3d-hint" id="t3d-help">拖动或使用方向键旋转视角；灰色为原始位置，紫色为变换结果。</p>
+      <div class="t3d-buttons">
+        <button type="button" id="t3d-b-rig">刚体示例</button>
+        <button type="button" id="t3d-b-sim">相似示例</button>
+        <button type="button" id="t3d-b-aff">仿射示例</button>
+        <button type="button" id="t3d-b-reset">复位</button>
+        <button type="button" id="t3d-b-view">重置视角</button>
+      </div>
+    </div>
+    <div>
+      <fieldset><legend>旋转：依次绕 X、Y、Z 轴</legend>
+        <div class="t3d-row"><label for="t3d-rx">绕 X 转</label><input type="range" id="t3d-rx" min="-180" max="180" step="1" value="0"><output id="t3d-rx-o" for="t3d-rx">0</output></div>
+        <div class="t3d-row"><label for="t3d-ry">绕 Y 转</label><input type="range" id="t3d-ry" min="-180" max="180" step="1" value="0"><output id="t3d-ry-o" for="t3d-ry">0</output></div>
+        <div class="t3d-row"><label for="t3d-rz">绕 Z 转</label><input type="range" id="t3d-rz" min="-180" max="180" step="1" value="0"><output id="t3d-rz-o" for="t3d-rz">0</output></div>
+      </fieldset>
+      <fieldset><legend>平移</legend>
+        <div class="t3d-row"><label for="t3d-tx">平移 tx</label><input type="range" id="t3d-tx" min="-2" max="2" step="0.1" value="0"><output id="t3d-tx-o" for="t3d-tx">0</output></div>
+        <div class="t3d-row"><label for="t3d-ty">平移 ty</label><input type="range" id="t3d-ty" min="-2" max="2" step="0.1" value="0"><output id="t3d-ty-o" for="t3d-ty">0</output></div>
+        <div class="t3d-row"><label for="t3d-tz">平移 tz</label><input type="range" id="t3d-tz" min="-2" max="2" step="0.1" value="0"><output id="t3d-tz-o" for="t3d-tz">0</output></div>
+      </fieldset>
+      <fieldset><legend>缩放与剪切</legend>
+        <div class="t3d-row"><label for="t3d-sx">缩放 sx</label><input type="range" id="t3d-sx" min="0.4" max="2" step="0.05" value="1"><output id="t3d-sx-o" for="t3d-sx">1</output></div>
+        <div class="t3d-row"><label for="t3d-sy">缩放 sy</label><input type="range" id="t3d-sy" min="0.4" max="2" step="0.05" value="1"><output id="t3d-sy-o" for="t3d-sy">1</output></div>
+        <div class="t3d-row"><label for="t3d-sz">缩放 sz</label><input type="range" id="t3d-sz" min="0.4" max="2" step="0.05" value="1"><output id="t3d-sz-o" for="t3d-sz">1</output></div>
+        <div class="t3d-row"><label for="t3d-k">剪切 k</label><input type="range" id="t3d-k" min="-1" max="1" step="0.05" value="0"><output id="t3d-k-o" for="t3d-k">0</output></div>
+      </fieldset>
+    </div>
+  </div>
+  <div class="t3d-grid t3d-results">
+    <div class="t3d-card">
+      <div class="t3d-caption" id="t3d-matrix-title">4×4 齐次变换矩阵 T</div>
+      <table class="t3d-matrix" aria-labelledby="t3d-matrix-title"><tbody id="t3d-mat"></tbody></table>
+    </div>
+    <div class="t3d-card">
+      <div class="t3d-caption">当前类型</div>
+      <div class="t3d-kind" id="t3d-kind" role="status" aria-live="polite"></div>
+      <div id="t3d-props"></div>
+      <p class="t3d-hint">性质针对三维空间中的变换，不受观察视角影响。</p>
+    </div>
+  </div>
+</section>
+<script src="{{ '/assets/js/transform3d-demo.js' | relative_url }}" defer></script>

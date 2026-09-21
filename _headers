@@ -10,10 +10,29 @@
 /assets/*
   Cache-Control: public, max-age=31536000, immutable
 
-# HTML 文件缓存
-/*.html
-  Cache-Control: public, max-age=0, must-revalidate
+# 页面使用无 .html 后缀的地址，每次访问都重新验证。
+# 不使用 /* 缓存规则，避免与 /assets/* 的 Cache-Control 合并。
+# Cloudflare 后台若强制覆盖源站 TTL，仍需调整对应规则并清除旧缓存。
+/
+  Cache-Control: no-cache, max-age=0, must-revalidate
+  Cloudflare-CDN-Cache-Control: no-store
 
-# 其他文件
-/*
-  Cache-Control: public, max-age=3600
+/categories/*
+  Cache-Control: no-cache, max-age=0, must-revalidate
+  Cloudflare-CDN-Cache-Control: no-store
+
+/posts/*
+  Cache-Control: no-cache, max-age=0, must-revalidate
+  Cloudflare-CDN-Cache-Control: no-store
+
+/tags/*
+  Cache-Control: no-cache, max-age=0, must-revalidate
+  Cloudflare-CDN-Cache-Control: no-store
+
+/archives/*
+  Cache-Control: no-cache, max-age=0, must-revalidate
+  Cloudflare-CDN-Cache-Control: no-store
+
+/page*
+  Cache-Control: no-cache, max-age=0, must-revalidate
+  Cloudflare-CDN-Cache-Control: no-store
